@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="./calculator.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <!--screen font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e1379289aa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <!--screen-->
+      <input id="screen" readonly />
+      <div class="buttons">
+        <button onclick="clearScreen()" class="operator-btn">c</button>
+        <button onclick="deleteLast()" class="operator-btn">
+          <i
+            class="fa-solid fa-delete-left"
+            style="color: rgb(255, 255, 255)"
+          ></i>
+        </button>
+        <button onclick="showInScreen('%')" class="operator-btn">%</button>
+        <button onclick="showInScreen('/')" class="operator-btn">
+          <i class="fa-solid fa-divide" style="color: rgb(255, 255, 255)"></i>
+        </button>
+        <button onclick="showInScreen(7)">7</button>
+        <button onclick="showInScreen(8)">8</button>
+        <button onclick="showInScreen(9)">9</button>
+        <button onclick="showInScreen('*')" class="operator-btn">x</button>
+        <button onclick="showInScreen(4)">4</button>
+        <button onclick="showInScreen(5)">5</button>
+        <button onclick="showInScreen(6)">6</button>
+        <button onclick="showInScreen('-')" class="operator-btn">-</button>
+        <button onclick="showInScreen(1)">1</button>
+        <button onclick="showInScreen(2)">2</button>
+        <button onclick="showInScreen(3)">3</button>
+        <button onclick="showInScreen('+')" id="plus-btn" class="operator-btn">
+          +
+        </button>
+        <button onclick="showInScreen('.')">.</button>
+        <button onclick="showInScreen(0)">0</button>
+        <button onclick="showInScreen('00')">0 0</button>
+        <button onclick="calculate()" id="equal-btn" class="operator-btn">
+          =
+        </button>
+      </div>
+    </div>
+    <script src="./calculator.js"></script>
+  </body>
+</html>

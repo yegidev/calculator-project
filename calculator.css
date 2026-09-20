@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.calculator {
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(0.95);
+  font-family: "Lilita one", sans-serif;
+  display: grid;
+  gap: 20px;
+  background-color: #ffb8b8;
+  grid-column: 2/3;
+  border-radius: 30px;
+  /*width: max-content;*/
+}
+#screen {
+  font-family: "Share Tech Mono", monospace;
+  color: rgb(73, 69, 69);
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0px 15px 0px 15px;
+  margin: 15px 10px 0px 10px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  text-align: left;
+  background-color: #f7f7f7;
+  height: 5rem;
+}
+button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #8a7575;
+  font-family: "Lilita One";
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+#equal-btn {
+  grid-column: 4/5;
+}
+div.buttons {
+  padding: 20px;
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: repeat(4, 100px);
+  border-radius: 20px;
+}
+.operator-btn:hover {
+  background-color: #e74b4b;
+}
+.operator-btn:active {
+  background-color: #e96d6d;
+}
+button:hover {
+  background-color: #8d6b6b;
+}
+button:active {
+  background-color: #8a7575;
+}
+.operator-btn {
+  background-color: #e26868;
+}
+
+@media (max-width: 600px) {
+  .calculator {
+    width: 95%;
+  }
+}
