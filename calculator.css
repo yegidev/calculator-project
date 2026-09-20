@@ -41,13 +41,15 @@ button {
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  background-color: #8a7575;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+
   font-family: "Lilita One";
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
 }
-
 #equal-btn {
   grid-column: 4/5;
 }
